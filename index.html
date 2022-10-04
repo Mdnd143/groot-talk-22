@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am Groot!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: rgb(24, 112, 116);
+        }
+        .groot-container{
+            width: 70%;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: cadetblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.6rem;
+        }
+        #output{
+            margin: 1rem auto;
+            font-size: x-large;
+            color: rgb(24, 112, 116);
+            background-color: white;
+            font-weight: bold;
+            }
+        .about {
+            margin: 1rem auto;
+            }
+        .main-head{
+            font-size: 307%;
+            }
+        #txt-input{
+            padding: 10px;
+            font-size: large;
+            color: black;
+            width: 20rem;
+            height: 5rem;
+            }
+        #btn-translate {
+            padding: 6px 10px;
+            color: rgb(24, 112, 116);
+            font-size: larger;
+            font-weight: bold;
+            border: none;
+            background-color: white;
+            box-shadow: 0px 0px 10px white;
+            cursor: pointer;
+            }
+            #btn-translate:hover{
+            box-shadow: 0px 0px 20px white;
+            }
+    </style>
+</head>
+<body>
+    <div class="groot-container">
+        <img src="./grrot.png" alt="groot" height="300px" width="300px">
+        <h1 class="main-head">Talk to groot!</h1>
+
+    <!-- input -->
+    <div class="input"><textarea id="txt-input" placeholder="enter your text here!" name="txt-input" required="true" ></textarea></div>
+
+    <!-- button  -->
+    <div class="b1"><button id="btn-translate" >translate</button></div>
+
+    <!-- output  -->
+    <div class="sign"><i> translation will be shown here 👇🏻</i></div>
+    <div id="output"></div>
+
+<!-- my footer page -->
+
+    <footer id="footer"> <div><h1 class="about">about this webapp</h1><h4 class="text-last">
+        Groot is a fictional superhero appearing in American comic books published by Marvel Comics. Created by Stan Lee, Larry Lieber and Jack Kirby, the character was a hit in Guardians of the galaxy and Avengers movies. We went to Asguard to learn groot (taught as optional second language).</h4></div></footer>
+    </div>
+
+        <!-- my script link is here(down) -->
+    <script src="/groot.js" type="text/javascript"></script>
+</body>
+</html>
