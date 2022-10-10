@@ -19,8 +19,13 @@ function clickHandler(){
     fetch(getTranslationURL(inputText))
     .then(Response => Response.json())
     .then(json => {
-        var translatedText = json.contents.translated;
+        if(json.contents){
+            var translatedText = json.contents.translated;
         outputDiv.innerText = translatedText;
+        }
+        else{
+            outputDiv.innerText = json.error.message;   
+        }
     })
     .catch(errorHandler)
 };
